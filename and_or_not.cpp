@@ -3,7 +3,8 @@
 #include <time.h>
 using namespace std;
 
-void time_delay(int seconds) {
+void time_delay(int seconds) 
+{
 	int milli_seconds = 1000 * seconds;
 	clock_t start_time = clock_t();
 	while(clock() < start_time + milli_seconds);
